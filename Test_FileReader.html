@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Test_canvas_2.css">
+	<script type="text/javascript" src="Test_FileReader.js"> </script>
+</head>
+<body>
+	<p> Hello World </p>
+	<canvas id="drawing" width="600" height="600"
+					onclick="drawCoord('drawing',event)"
+					ondblclick="drawLines('drawing')"></canvas>
+	<br>
+	<input type="file" accept="text/plain" onchange="openFile('drawing', event)"><br>
+	<script>
+		Draw1("drawing");
+	</script>
+
+</body>
+</html>
